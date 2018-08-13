@@ -10,7 +10,8 @@ namespace SwitchExercises
     {
         static void Main(string[] args)
         {
-            // Task.1
+            //***************************************Task.1**********************************************
+
             //string pet; 
 
             //Console.WriteLine("************************************************");
@@ -42,56 +43,91 @@ namespace SwitchExercises
             //}   
             //            Console.ReadLine();
 
-            //Task.2
+            //**********************************Task.2************************************************
 
-            string fruit;
-            bool loopContinue = true;
+            //string fruit;
+            //bool loopContinue = true;           
+
+            //    Console.WriteLine("**********************************************************");
+            //Console.WriteLine("***********************Exercise 2*************************");
+            //Console.WriteLine("**********************************************************");
+
+            //Console.WriteLine("\nEnter a fruit to find out the price per kg:\n ");
+            //fruit = Console.ReadLine();
+
+            //do
+            //{
+            //    switch (fruit)
+            //    {
+            //        case "Apple":
+            //            Console.WriteLine("\nApples @ $1.25 per kg\n");
+            //            loopContinue = false;
+            //            break;
+
+            //        case "Banana":
+            //            Console.WriteLine("\nBananas @ $3.15 per kg\n");
+            //            loopContinue = false;
+            //            break;
+            //        case "Kiwifruit":
+            //            Console.WriteLine("\nKiwifruit @ $4.65 per kg\n");
+            //            loopContinue = false;
+            //            break;
+            //        case "Orange":
+            //            Console.WriteLine("\nOranges @ $2.75 per kg\n");
+            //            loopContinue = false;
+            //            break;
+            //        default:
+            //            Console.WriteLine("\nSorry, there is no pricing per kg for your choice. Please try again:");
+            //            loopContinue = true;
+            //            break;
+            //    }
+
+            //} while (loopContinue);
+
+
+            //Console.ReadLine();
+
+            //*************************************************Task.3***********************************************
+
+            Console.WriteLine("***********************************************************************************************");
+            Console.WriteLine("*********************************Calculator****************************************************");
+            Console.WriteLine("***********************************************************************************************");
+
+            int num1, num2;
+            float  result = 0;
+            string op;
             
 
+            Console.WriteLine("\nEnter first number: ");
+            num1 = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("**********************************************************");
-            Console.WriteLine("***********************Exercise 2*************************");
-            Console.WriteLine("**********************************************************");
+            Console.WriteLine("\nEnter second number: ");
+            num2 = int.Parse(Console.ReadLine());
+           
+            Console.WriteLine("\nNow enter operator: +, -, *, /");
+            op = Console.ReadLine();
 
-            Console.WriteLine("\nEnter a fruit to find out the price per kg:\n ");
-            fruit = Console.ReadLine();
-
-            do
+            switch (op)
             {
-                switch (fruit)
-                {
-                    case "Apple":
-                        Console.WriteLine("\nApples @ $1.25 per kg\n");
-                        loopContinue = false;
-                        break;
-
-                    case "Banana":
-                        Console.WriteLine("\nBananas @ $3.15 per kg\n");
-                        loopContinue = false;
-                        break;
-                    case "Kiwifruit":
-                        Console.WriteLine("\nKiwifruit @ $4.65 per kg\n");
-                        loopContinue = false;
-                        break;
-                    case "Orange":
-                        Console.WriteLine("\nOranges @ $2.75 per kg\n");
-                        loopContinue = false;
-                        break;
-                    default:
-                        Console.WriteLine("\nSorry, there is no pricing per kg for your choice. Please try again:");
-                        loopContinue = true;
-                        break;
-                }
-
-            } while (loopContinue);
-
-
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    result = num1 / num2;
+                    break;
+                default:
+                    Console.WriteLine("Sorry, you have entered a wrong operator. Please try again");
+                    break;                
+                                           
+            }
+            Console.WriteLine("Result = " + result);
             Console.ReadLine();
-
-            // Task.3
-
-
-
 
             output();
         }
