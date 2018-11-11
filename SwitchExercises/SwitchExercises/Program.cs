@@ -25,7 +25,6 @@ namespace SwitchExercises
             //{
             //    case "Cat":
             //        Console.WriteLine("Cat");
-
             //        break;
             //    case "Dog":
             //        Console.WriteLine("Dog");

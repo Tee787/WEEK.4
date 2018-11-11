@@ -51,47 +51,62 @@ namespace LoopsAndMore
 
             //******************************************* Task 2 *********************************************
 
-            //int num2, num1;
+            int num2, num1;
 
-            //Console.WriteLine("******************************************************************");
-            //Console.WriteLine("**************************** Task 2 ******************************");
-            //Console.WriteLine("******************************************************************\n");
-            //Console.WriteLine("Input the number to be calculated:\n ");
-            //num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("******************************************************************");
+            Console.WriteLine("**************************** Task 2 ******************************");
+            Console.WriteLine("******************************************************************\n");
+            Console.WriteLine("Input the number to be calculated:\n ");
+            num2 = int.Parse(Console.ReadLine());
 
 
-            //Console.WriteLine("\n>>>>>>>> for loop <<<<<<<\n");
-            //for (num1 = 1; num1 <= 12; num1++)
-            //{
-            //    Console.WriteLine("\t{0} x {1} = {2}\n", num1,num2,num1 * num2);
-            //}
-            //Console.WriteLine(">>>>>>> while loop <<<<<<<\n");
+            Console.WriteLine("\n>>>>>>>> for loop <<<<<<<\n");
+            for (num1 = 1; num1 <= 12; num1++)
+            {
+                Console.WriteLine("\t{0} x {1} = {2}\n", num1, num2, num1 * num2);
+            }
+            Console.WriteLine(">>>>>>> while loop <<<<<<<\n");
 
-            //num1 = 0;
-            //while (num1 <= 12)
-            //{
-            //    Console.WriteLine("\t{0} x {1} = {2}\n", num1, num2, num1 * num2);
-            //    num1++;
-            //}
-            //Console.WriteLine(">>>>>>> do while loop <<<<<<<\n");
+            num1 = 0;
+            while (num1 <= 12)
+            {
+                Console.WriteLine("\t{0} x {1} = {2}\n", num1, num2, num1 * num2);
+                num1++;
+            }
+            Console.WriteLine(">>>>>>> do while loop <<<<<<<\n");
 
-            //num1 = 0;
-            //do
-            //{
-            //    Console.WriteLine("\t{0} x {1} = {2}\n", num1, num2, num1 * num2);
-            //    num1++;
-            //} while (num1 <= 12);
+            num1 = 0;
+            do
+            {
+                Console.WriteLine("\t{0} x {1} = {2}\n", num1, num2, num1 * num2);
+                num1++;
+            } while (num1 <= 12);
 
-            //Console.ReadLine();
+            Console.ReadLine();
 
             //******************************************* Task 3 *********************************************
 
-            Console.WriteLine("******************************************************************");
-            Console.WriteLine("**************************** Task 3 ******************************");
-            Console.WriteLine("******************************************************************\n");
+            //Console.WriteLine("******************************************************************");
+            //Console.WriteLine("**************************** Task 3 ******************************");
+            //Console.WriteLine("******************************************************************\n");
+
+            //float x, y, square, cube;
 
 
+            //Console.WriteLine("Input start number is: ");
+            //x = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Input end number is: ");
+            //y = int.Parse(Console.ReadLine());
+            //Console.Write("\nNumber\tSquare\t\tCube\t\t1000xN");
+            //Console.Write("\n-\t-----\t\t----\t\t------\n");
+            //Console.WriteLine(">>>>>>>>>>>>>>> for loop <<<<<<<<<<<<<<<<<");
 
+            //for (float i = x; i <= y; i++)
+            //{
+            //    Console.WriteLine("{i}\t{i * x^2}\t\t{i * x^3}", x, x*x, x*x*x);
+            //}
+
+            //Console.Read();
         }
     }
 }
